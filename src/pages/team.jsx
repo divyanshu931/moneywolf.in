@@ -57,7 +57,7 @@ const OurTeam = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center justify-center h-1/4 text-white text-center py-8 bg-hero-gradient"
+        className="flex flex-col items-center justify-center h-1/4 text-white text-center py-8 bg-primary"
       >
         <h1 className="text-4xl font-semibold mb-4">Meet Our Team</h1>
         <p className="text-lg max-w-md text-center">
@@ -68,7 +68,7 @@ const OurTeam = () => {
       {/* Main Content */}
       <div className={`bg-black-gradient-2 ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <div className={`flex flex-col ${styles.paddingY} text-white bg-discount-gradient`}>
+          <div className={`flex flex-col ${styles.paddingY} text-white primary`}>
             <div className="flex flex-wrap justify-center">
               {teamMembers.map((member, index) => (
                 <TeamMemberCard 

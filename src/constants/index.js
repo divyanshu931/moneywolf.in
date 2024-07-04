@@ -77,23 +77,23 @@ export const feedback = [
     content:
       "I Would highly recommend them to everyone who is looking for some assistance with their Amazon seller account and related services.",
     name: "Amrish oberai ",
-    title: "Founder & Leader",
+    title: "Founder",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
       "I was very happy with the services and quality of work. Their team was open to feedback and flexible in meeting needs.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+    name: "Lucky singh",
+    title: "om sai trading ",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
       "I have received the photos back from many jobs and they are always great! The editing service was cost-effective, and Moneywolf Web Solutions was friendly to work with.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+    name: "Rajesh",
+    title: "Owner of indiawaals",
     img: people03,
   },
 ];

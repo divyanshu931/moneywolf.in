@@ -9,9 +9,19 @@ import Hero from './Hero'
 import Navbar from './Navbar'
 import Stats from './Stats'
 import Testimonials from './Testimonials'
-
+import Services from './Service'
+import GetQuoteButton from './GetQuoteButton'
+import Industries from './Industries'
+import OurTech from './ourtech'
+import CaseStudyGrid from './Casestudy'
+import ProcessSteps from './process'
 
 export {
+    ProcessSteps,
+    OurTech,
+    CaseStudyGrid,
+    Industries,
+    Services,
     Billing,
     Business,
     CardDeal,
@@ -22,5 +32,7 @@ export {
     Hero,
     Navbar,
     Stats,
-    Testimonials
+    Testimonials,
+    GetQuoteButton
+    
 }

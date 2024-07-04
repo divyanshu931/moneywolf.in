@@ -26,27 +26,27 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='bg-primary w-full overflow-hidden'>
+    <div className='bg-dimWhite w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         
       
-      <div className="flex flex-col items-center justify-center h-1/4 text-white py-8"><br/>
+      <div className="flex flex-col items-center justify-center h-1/4 text-black py-8"><br/>
         <img src={logo} alt="Company Logo" className="w-32 h-32 mb-4 animate-bounce" />
         <h1 className="text-4xl font-semibold mb-4 animate-fade-in-up">Contact Us</h1>
-        <p className="text-lg max-w-md text-center animate-fade-in-up">
+        <p className="text-lg max-w-md text-center animate-fade-in-up text-black">
           We'd love to hear from you! Please fill out the form below or give us a call.
         </p>
       </div>
-      <section className="bg-primary-100 py-12 text-white">
+      <section className="bg-primary-100 py-12 text-black">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-start">
             <div className="mb-8 md:mb-0 md:w-1/2 animate-fade-in-left">
-              <h2 className="text-3xl font-semibold mb-4">Contact Information</h2>
-              <p className="mb-4 text-white">Phone: +1 (123) 456-7890</p>
-              <p className="mb-4 text-white">Email: contact@moneywolf.in</p>
-              <p className="mb-4">Address: 123 Moneywolf, Suite 100, UP, India</p>
+              <h2 className="text-3xl font-semibold mb-4 text-black">Contact Information</h2>
+              <p className="mb-4 ">Phone: +91 7827463160</p>
+              <p className="mb-4 ">Email: contact@moneywolf.in</p>
+              <p className="mb-4">Address: Gopal Nagar, Gali No. 6, Najafagragh ,Jharoda Kalan,Road, New Delhi, India 110043</p>
             </div>
             <div className="md:w-1/2 animate-fade-in-right">
               <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
@@ -98,7 +98,7 @@ const ContactUs = () => {
       </div>
       </div>
       
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`bg-dimwhite ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
       {/* Footer */}
       <Footer />

@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Testimonials, Footer, Navbar } from '../components';
 import styles from '../style';
-import { phone, bg, website_1 } from '../assets'; 
-
+import { phone, bg, website_1 } from '../assets';
+import Wave from 'react-wavify';
 
 const About = () => {
   const containerVariants = {
@@ -12,29 +12,28 @@ const About = () => {
   };
 
   return (
-    <div className='bg-primary w-full overflow-hidden'>
+    <div className='bg-dimWhite w-full overflow-hidden'>
       <div className={`${styles.flexCenter} ${styles.navbarHeight}`}>
+        <div className={styles.boxWidth}>
+          <Navbar />
+        </div>
+      </div>
 
-<div className={styles.boxWidth}>
-  <Navbar />
-</div>
-</div>
-
-    
-      <section className={`bg-gradient-new ${styles.flexCenter} ${styles.paddingY}`}>
+      <section className={`bg-secondary ${styles.flexCenter} ${styles.paddingY}`}>
         <motion.div
           className="flex flex-col lg:flex-row items-center justify-center w-full text-white text-center"
           initial="hidden"
           animate="visible"
           variants={containerVariants}
         >
-          <div className="lg:w-3/8 mb-6 lg:mb-0">
+          <div className='lg:w-3/8 mb-6 lg:mb-0 bg-secondary'>
             <h1 className={`${styles.heading2} ss:text-[36px] leading-[42px]`}>
-              <span className='text-gradient-center'>About MoneyWolf</span>
+              <span className='text-black'>About MoneyWolf</span>
             </h1>
-            <p className="text-lg max-w-md mx-auto">
+            <p className="text-black max-w-md mx-auto">
               We are the next generation of solution providers in the industry.
               Let us help you achieve your goals with cutting-edge technology and innovative solutions.
+              
             </p>
           </div>
           <motion.img
@@ -43,15 +42,40 @@ const About = () => {
             variants={containerVariants}
             src={phone}
             alt="Tech illustration"
-            className="w-full lg:w-1/4 ml-0 lg:ml-8"
+            className="w-3/4 lg:w-1/4 ml-0 lg:ml-8"
           />
+          
         </motion.div>
       </section>
-    
-     
-      {/* Main Content */}
-      <div className={`flex flex-col ${styles.paddingY}${styles.flexCenter}${styles.boxWidth} bg-gradient-wave text-white`}>
-        
+      <br/><br/>
+      <div className="relative">
+        <Wave
+          fill="#F7F9F2"
+          paused={false}
+          options={{
+            height: 40,
+            amplitude: 20,
+            speed: 0.25,
+            points: 4,
+          }}
+          className="absolute bottom-0 w-full"
+        />
+        <Wave
+          fill="rgba(77, 134, 156, 0.5)"
+          paused={false}
+          options={{
+            height: 20,
+            amplitude: 15,
+            speed: 0.2,
+            points: 6,
+          }}
+          className="absolute bottom-0 w-full"
+          style={{ zIndex: -1 }}
+        />
+      </div>
+      <div className={`bg-dimWhite ${styles.flexCenter} min-h-screen`}>
+      <div className={`flex flex-col ${styles.paddingY} ${styles.flexCenter} ${styles.boxWidth} bg-dimWhite text-black`}>
+
         <motion.section
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -61,10 +85,10 @@ const About = () => {
           <div className="w-full lg:w-1/2 mx-auto">
             <h4 className="text-xl font-semibold mb-4">
               At Moneywolf, we empower your online success with reliability, agility, and results-driven solutions.
-              With over 4 years of excellence, 10+ industry verticals, 300+ seasoned professionals, and 7000+ successful projects, 
+              With over 4 years of excellence, 10+ industry verticals, 300+ seasoned professionals, and 7000+ successful projects,
               we manage every stage of a project from conception to completion.
-              <br/>
-              Our expert team is dedicated to ensuring your business thrives in the digital age. 
+              <br />
+              Our expert team is dedicated to ensuring your business thrives in the digital age.
               Partner with us for innovative and customized solutions that drive success.
             </h4>
           </div>
@@ -76,7 +100,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className={`flex flex-col lg:flex-row items-center ${styles.sectionReverse} text-center`}
         >
-          <img src={bg} alt="Company Team" className="w-full lg:w-1/2 mr-0 lg:mr-8" />
+          <img src={bg} alt="Company Team" className="w-full lg:w-1/3 mx-auto mb-4 lg:mb-0" />
           <div className="w-full lg:w-1/2 mx-auto">
             <h2 className="text-3xl font-semibold mb-4">About Moneywolf</h2>
             <p className="max-w-3xl mx-auto">
@@ -103,21 +127,22 @@ const About = () => {
               digital ecosystem.
             </p>
           </div>
-          <img src={website_1} alt="Our Journey" className="w-full lg:w-1/2 ml-0 lg:ml-8" />
+          <img src={website_1} alt="Our Journey" className="w-full lg:w-1/3 mx-auto mt-4 lg:mt-0" />
         </motion.section>
 
         {/* Add more sections here as needed */}
 
       </div>
+      </div>
 
-      <div className={`bg-primary ${styles.flexCenter} min-h-screen`}>
-      <div className={styles.boxWidth}>
-      {/* Footer */}
-      <Testimonials/>
-      <Footer />
+      <div className={`bg-dimWhite ${styles.flexCenter} min-h-screen`}>
+        <div className={styles.boxWidth}>
+          {/* Footer */}
+          <Testimonials />
+          <Footer />
+        </div>
       </div>
-      </div>
-      </div>
+    </div>
   );
 };
 

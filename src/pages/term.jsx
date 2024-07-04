@@ -19,7 +19,7 @@ const TermsAndConditions = () => {
         transition={{ duration: 0.5 }}
         className="flex flex-col items-center justify-center h-1/4 text-white text-center py-8 bg-hero-gradient"
       >
-        <h1 className="text-4xl font-semibold mb-4">Terms and Conditions</h1>
+        <h1 className="text-4xl font-semibold mb-4">,Terms and Conditions</h1>
         <p className="text-lg max-w-md text-center">
           Please read these terms and conditions carefully before using our services.
         </p>

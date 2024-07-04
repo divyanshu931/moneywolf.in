@@ -9,7 +9,7 @@ const Feedback = ({ content, name, title, img }) => {
         alt='double-quotes'
         className='w-[42px] h-[27px] object-contain'
       />
-      <p className='font-poppins font-normal text-[18px] leading-[32px] text-white my-10'>
+      <p className='font-poppins font-normal text-[18px] leading-[32px] text-black my-10'>
         {content}
       </p>
       <div className='flex flex-row'>
@@ -19,8 +19,8 @@ const Feedback = ({ content, name, title, img }) => {
           className='w-[48px] h-[48px] rounded-full'
         />
         <div className='flex flex-col ml-4'>
-          <h4 className='font-poppins font-semibold text-[20px] leading-[32px] text-white'>{name}</h4>
-          <p className='font-poppins font-normal text-[16px] leading-[24px] text-white'>{title}</p>
+          <h4 className='font-poppins font-semibold text-[20px] leading-[32px] text-dimblue'>{name}</h4>
+          <p className='font-poppins font-normal text-[16px] leading-[24px] text-dimblue'>{title}</p>
         </div>
       </div>
     </div>

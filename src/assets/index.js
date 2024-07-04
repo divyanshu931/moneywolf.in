@@ -23,7 +23,7 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import bg from "./bg.jpg";
+import bg from "./bg.png";
 import website_1 from "./website-1.png";
 import phone from "./phone.png";
 import seoImage from "./seoimage.png";
@@ -31,7 +31,41 @@ import webDevImage from "./webdevimage.png";
 import otherServicesImage from "./otherServicesimag.png";
 import wave from "./wave.svg";
 import website from "./website.png"
+import pay_per_click from "./pay-per-click.png";
+import film from "./film.png";
+import mobile_development from "./mobile-development.png";
+import gdesign from "./gdesign.png";
+import socailmedai from "./sm.png";
+import tourTravelImg from './tour_travel.png';
+import shoppingImg from './shopping.png';
+import realEstateImg from './real_estate.png';
+import interiorImg from './interior.png';
+import agricultureImg from './agriculture.png';
+import machinesImg from './machines.png';
+import groceryImg from './grocery.png';
+import eventsImg from './events.png';
+import educationImg from './education.png';
+import pestControlImg from './pest_control.png';
+import carRentingImg from './car_renting.png';
+import portalsImg from './portals.png';
 export {
+  shoppingImg,
+  realEstateImg,
+  interiorImg,
+  agricultureImg,
+  machinesImg,
+  groceryImg,
+  eventsImg,
+  educationImg,
+  pestControlImg,
+  carRentingImg,
+  portalsImg,
+  tourTravelImg,
+  socailmedai,
+  gdesign,
+  mobile_development,
+  film,
+  pay_per_click,
   website,
   wave,
   airbnb,

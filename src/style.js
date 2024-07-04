@@ -1,23 +1,19 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
-  heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph: "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+  heading2: "font-poppins font-semibold xs:text-[48px] text-[40px] text-black-dark xs:leading-[76.8px] leading-[66.8px] w-full",
+  paragraph: "font-poppins font-normal text-black-light text-[18px] leading-[30.8px]",
 
   flexCenter: 'flex justify-center items-center',
   flexStart: "flex justify-start items-start",
   flexColumn: "flex flex-col justify-center items-center",
 
   paddingX: "px-6",
-
-  boxWidth: "max-w-7xl w-full",
-
-  paddingX: "sm:px-16 px-6",
   paddingY: "sm:py-16 py-6",
   marginX: "sm:mx-16 mx-6",
   marginY: "sm:my-16 my-6",
 
-  navbarHeight: "h-16 sm:h-20", // New style for navbar height
+  navbarHeight: "h-16 sm:h-20",
   section: "flex md:flex-row flex-col py-12",
   sectionReverse: "flex md:flex-row flex-col-reverse py-12",
 
@@ -25,6 +21,11 @@ const styles = {
   sectionImg: "flex-1 flex justify-center items-center md:ml-10 ml-0 md:mt-0 mt-10 relative",
 
   sectionInfo: "flex-1 flex justify-start items-start flex-col",
+
+  // New color classes for different shades of black
+  'text-black-light': 'text-[#333]',
+  'text-black-dark': 'text-[#000]',
+  'text-black-medium': 'text-[#666]',
 };
 
 export const layout = {

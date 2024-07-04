@@ -1,4 +1,5 @@
 import React from 'react';
+import Marquee from 'react-marquee-slider';
 import { feedback } from '../constants'; // Assuming feedback is correctly imported
 import styles from '../style'; // Assuming styles are correctly imported
 import Feedback from './Feedback'; // Assuming Feedback component is correctly imported
@@ -20,10 +21,15 @@ const Testimonials = () => {
       </div>
       
       {/* Feedback cards */}
-      <div className='flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]'>
-        {feedback.map((card) => (
-          <Feedback key={card.id} {...card} />        
-        ))}
+      <div className='feedback-container relative z-[1]'>
+        <Marquee velocity={25} scatter={false} resetAfterTries={200} direction="ltr" className="w-full">
+          {feedback.map((card) => (
+            <div key={card.id} className="mx-4">
+              <Feedback {...card} />
+            </div>
+          ))}
+         
+        </Marquee>
       </div>
     </section>
   );

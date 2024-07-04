@@ -1,4 +1,5 @@
 import Home from "./pages/Home";
+
 import Client from "./pages/client";
 import About from "./pages/About";
 import Service from "./pages/serevice";
@@ -15,6 +16,10 @@ import FAQs from "./pages/FAQs";
 import OurValues from "./pages/values";
 import OurTeam from "./pages/team";
 import ErrorPage from "./pages/error";
+import ChatBotButton from "./components/ChatBotButton"
+
+import { GetQuoteButton } from "./components";
+
 function App() {
   return (
     <>
@@ -43,8 +48,9 @@ function App() {
             {/* Fallback route for undefined paths */}
             <Route path="*" element={<ErrorPage />} />
       </Routes>
-   
-       
+      <GetQuoteButton />
+      <ChatBotButton /> 
+      
       </Main>
     </>
   );

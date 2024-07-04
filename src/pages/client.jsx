@@ -31,9 +31,9 @@ const Client = () => {
   <Navbar />
 </div>
 </div>
-      <div className="flex flex-col items-center justify-center h-1/4 text-white py-8">
+      <div className="flex flex-col items-center justify-center h-1/4 text-black py-8" >
         <h1 className="text-4xl font-semibold mb-4">Our Clients</h1>
-        <p className="text-lg max-w-md text-center">
+        <p className="text-lg max-w-md text-center text-black">
           Partnered with Clients Worldwide
         </p>
         <h6 className="max-w-md text-center ">
@@ -45,15 +45,15 @@ const Client = () => {
       </div>
       
       <section className="bg-primary-100 py-12">
-      <h2 className="flex flex-col items-center justify-center h-1/4 text-white py-14">Client Feedback</h2>
+      <h2 className="flex flex-col items-center justify-center h-1/4  py-14 text-black">Client Feedback</h2>
         <div className="flex flex-wrap justify-center">
           {feedbacks.map((feedback) => (
             <FeedbackCard key={feedback.id} name={feedback.name} feedback={feedback.feedback} />
           ))}
         </div>
       </section>
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={`bg-primary ${styles.flexCenter} min-h-screen`}>
+      <div className={styles.boxWidth}>
       {/* Footer */}
       <Footer />
       </div>

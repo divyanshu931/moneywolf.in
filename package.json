@@ -17,6 +17,8 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.6",
+    "react-intersection-observer": "^9.10.3",
+    "react-marquee-slider": "^1.1.5",
     "react-router-dom": "^6.23.1",
     "react-tsparticles": "^2.12.2",
     "react-wavify": "^1.11.0",

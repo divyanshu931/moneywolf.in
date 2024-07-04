@@ -13,10 +13,10 @@ const FeatureCard = ({ icon, title, content, index }) => (
       />
     </div>
     <div className='flex-1 flex flex-col'>
-      <h4 className='font-poppins font-semibold text-white text-[18px] leading-[23px] mb-1'>
+      <h4 className='font-poppins font-semibold text-black text-[18px] leading-[23px] mb-1'>
         {title}
       </h4>
-      <p className='font-poppins font-normal text-dimWhite text-[16px] leading-[24px]'>
+      <p className='font-poppins font-normal text-black text-[16px] leading-[24px]'>
         {content}
       </p>
     </div>
@@ -27,8 +27,8 @@ const Business = () => {
   return (
     <section id='features' className={`${layout.section} ${styles.flexCenter} px-4 md:px-0`}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Moneywolf,<br className='sm:block hidden'/>  Convert Your Business Dreams Into Reality </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <h2 className={`${styles.heading2} text-black`}>Moneywolf,<br className='sm:block hidden'/> Convert Your Business Dreams Into Reality </h2>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 text-black`}>
           Moneywolf is an IT solutions and consultancy firm that assists visionaries in being industry changemakers and defining business future. We collaborate as one team with our clients with the common goal of achieving amazing achievements, outperforming the competition, and redefining industries. To offer better, faster, and more enduring results, we combine our specialized, integrated knowledge with our services. With over 14 years of experience in various industry verticals, we uncover new sources to add value to your
         </p>
         <Button styles='mt-10'/>

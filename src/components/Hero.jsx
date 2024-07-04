@@ -23,10 +23,10 @@ const Hero = () => {
   };
 
   return (
-    <section id='home' className={`${layout.section}`}>
+    <section id='home' className={`${layout.section}`} style={{ backgroundColor: '#ADD8E6' }}>
       <div className={`${layout.sectionInfo} ${styles.paddingX} xl:px-0 sm:px-16 px-6`} style={{ position: 'relative', zIndex: 1 }}>
         <motion.div
-          className={`flex flex-row items-center py-[6px] px-4 bg-discount-gradient-2 rounded-[10px] mb-2`}
+          className={`flex flex-row items-center py-[6px] px-4 bg-dimBlue rounded-[10px] mb-2`}
           whileHover={{ scale: 1.05 }}
         >
           <img
@@ -34,13 +34,13 @@ const Hero = () => {
             alt='discount'
             className='w-[32px] h-[32px]'
           />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className='text-white'>60%</span> more traffic {" "}
-            <span className='text-white'>| Upgrade</span> your website
+          <p className={`${styles.paragraph} ml-2 text-black`}>
+            <span className='text-white'>60% more traffic {" "}</span>
+            <span className='text-white'>| Upgrade  your website</span>
           </p>
         </motion.div>
         <div className='flex flex-row justify-between items-center w-full'>
-          <h1 className={`${styles.heading2} ss:text-[72px] leading-[75px]`} style={{ zIndex: 1 }}>
+          <h1 className={`${styles.heading2} ss:text-[72px] leading-[75px] text-black`} style={{ zIndex: 1 }}>
             The Next <br className='sm:block hidden'/> {" "}
             <span className='text-gradient'>Generation</span> {" "}
           </h1>
@@ -48,10 +48,10 @@ const Hero = () => {
             <GetStarted/>
           </div>
         </div>
-        <h1 className={`${styles.heading2} text-white ss:text-[68px] leading-[75px] w-full`} style={{ zIndex: 1 }}>
+        <h1 className={`${styles.heading2} text-black ss:text-[68px] leading-[75px] w-full`} style={{ zIndex: 1 }}>
           Solution
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`} style={{ zIndex: 1 }}>
+        <p className={`${styles.paragraph} max-w-[470px] mt-5 text-black`} style={{ zIndex: 1 }}>
           Our team of experts uses a methodology to identify the Website model most likely to fit your needs.
           We examine annual percentage rates, annual turnover.
         </p>
